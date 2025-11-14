@@ -29,10 +29,10 @@ void display(NODE start)
     else{
         temp = start;
         while(temp->addr!=NULL){
-            printf("%d x %d +",temp->co, temp->po);
+            printf("%dx^%d +",temp->co, temp->po);
             temp = temp->addr;
         }
-        printf("% x %d\n", temp->co, temp->po);
+        printf("%dx^%d\n", temp->co, temp->po);
     }
 }
 NODE addterm(NODE res,int co,int po)
@@ -92,3 +92,4 @@ int main()
     display(poly);
     return 0;
 }
+
